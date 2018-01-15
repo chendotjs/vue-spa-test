@@ -21,9 +21,9 @@ export default {
     }
   },
   computed: {
-    time:function() {
-      // return this.$store.state.totalTime
-    }
+    time: function() {
+      return this.$store.state.totalTime
+    },
   },
 }
 </script>
