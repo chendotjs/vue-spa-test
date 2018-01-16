@@ -6,7 +6,7 @@
 
       <div class="panel-body">
         <h1 class="text-center">{{ time }} 小时</h1>
-        <p class="text-center">author: {{author}}</p>
+        <p class="text-center">{{'author: ' + author + ' time:' + ttt}}</p>
       </div>
 
     </div>
@@ -18,6 +18,7 @@ export default {
   data() { // 组件的data必须为函数
     return {
       author: 'chendotjs',
+      ttt: this.$store.state.totalTime
     }
   },
   computed: {
